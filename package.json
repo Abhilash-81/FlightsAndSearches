@@ -1,4 +1,13 @@
+
 {
+  "version": "1.0.0",
+  "description": "Micro Services for handling Flight CRUD",
+  "main":"index.js",
+  "scripts": {
+    "start": "npx nodemon src/index"
+  },
+  "author": "Abhilash",
+  "license":"ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
