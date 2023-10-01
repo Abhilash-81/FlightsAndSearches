@@ -30,7 +30,7 @@ class cityRespository{
                     id:city_id
                 }
             });
-            return true;
+            return city;
         } catch (error) {
             console.log("Something went wrong");
             return {error};
@@ -40,6 +40,7 @@ class cityRespository{
     async getCity(city_id){
         try {
             const city=await City.findByPk(city_id);
+            return city;
         } catch (error) {
             console.log("Something went wrong");
             return {error};

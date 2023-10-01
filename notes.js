@@ -8,5 +8,10 @@
  * process.env.(Variable_Name) -->This is used to access
  * This is then exported and and imported in index.js 
  * 
+ * once you have added your DB config , go to src folder from your terminal and execute 
+ * 'npx sequelize db:create'and then execute
+ * If you want to change from files to have consistency change from both 
+ * migrations and table.js file 
+ * 
  * 
  */
