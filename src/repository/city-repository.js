@@ -7,7 +7,7 @@ class cityRespository{
             const city=await City.create({name});
             return city;
         }catch(error){
-            console.log("Something went wrong");
+            console.log("Something went wrong at repository level");
             throw {error};
         }
     }
@@ -20,6 +20,7 @@ class cityRespository{
            }); 
            return true;
         }catch(error){
+            console.log("Something went wrong at repository level");
             throw {error};
         }
     }
@@ -32,7 +33,7 @@ class cityRespository{
             });
             return city;
         } catch (error) {
-            console.log("Something went wrong");
+            console.log("Something went wrong at repository level");
             return {error};
         }
     }
@@ -42,7 +43,7 @@ class cityRespository{
             const city=await City.findByPk(city_id);
             return city;
         } catch (error) {
-            console.log("Something went wrong");
+            console.log("Something went wrong at repository level");
             return {error};
         }
     }
